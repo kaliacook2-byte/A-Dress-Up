@@ -6,7 +6,8 @@ const memorialButton = document.getElementById("memorial-btn");
 
 const content = document.getElementById("content");
 
-dressUpButton.addEventListener("click", function() {
+   content.innerHTML = `
+    dressUpButton.addEventListener("click", function() {
   setActiveButton(dressUpButton);
 
   content.innerHTML = `
