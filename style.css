@@ -9,17 +9,17 @@ body {
   width: 90%;
   max-width: 900px;
   margin: 30px auto;
-  border: 6px solid #a8c93b;
+  border: 6px solid #F1E1F5;
   background-color: white;
 }
 
 .header {
-  background-color: #f12b87;
+  background-color: #EC008C;
   height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 4px solid #a8c93b;
+  border-bottom: 4px solid #83BD1C;
   overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ body {
 .nav button {
   flex: 1;
   border: none;
-  background-color: #b7d845;
+  background-color: #83BD1C;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
@@ -47,7 +47,7 @@ body {
 }
 
 .nav button:hover {
-  background-color: #d2eb70;
+  background-color: #5d6b23;
 }
 
 .content {
@@ -58,7 +58,8 @@ body {
 }
 .logo {
   max-width: 70%;
-  max-height: 110px;
+  max-height: 150px;
   width: auto;
   height: auto;
   object-fit: contain;
+}
