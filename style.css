@@ -63,3 +63,46 @@ body {
   height: auto;
   object-fit: contain;
 }
+/* CHARACTER SELECT SCREEN */
+
+.character-select {
+  padding: 20px;
+  text-align: center;
+}
+
+.character-select h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.character-cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 25px;
+}
+
+.character-card {
+  width: 180px;
+  height: 280px;
+  background-color: #55c9bd;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.doll-window {
+  width: 100%;
+  height: 100%;
+  background-color: #315f63;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doll-window p {
+  font-size: 13px;
+}
