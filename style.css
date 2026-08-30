@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 4px solid #a8c93b;
+  overflow: hidden;
 }
 
 .header h1 {
