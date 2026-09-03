@@ -106,3 +106,26 @@ body {
 .doll-window p {
   font-size: 13px;
 }
+.ribbon.vertical {
+  position: absolute;
+  width: 32px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #ffb6cf;
+  border-left: 2px solid #e96b9b;
+  border-right: 2px solid #e96b9b;
+
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 9px,
+      #555 9px,
+      #555 11px,
+      transparent 11px,
+      transparent 18px
+    );
+}
