@@ -3,11 +3,19 @@ console.log("A Dress Up! is running.");
 const dressUpButton = document.getElementById("dress-up-btn");
 const closetButton = document.getElementById("closet-btn");
 const memorialButton = document.getElementById("memorial-btn");
-
 const content = document.getElementById("content");
 
-   content.innerHTML = `
-    dressUpButton.addEventListener("click", function() {
+
+function setActiveButton(button) {
+  dressUpButton.classList.remove("active");
+  closetButton.classList.remove("active");
+  memorialButton.classList.remove("active");
+
+  button.classList.add("active");
+}
+
+
+dressUpButton.addEventListener("click", function() {
   setActiveButton(dressUpButton);
 
   content.innerHTML = `
@@ -41,26 +49,34 @@ const content = document.getElementById("content");
       </div>
 
       <div class="info-girl-area">
+
         <div class="info-girl-picture"></div>
 
         <div class="info-girl-message">
           <span class="info-name">INFO GIRL</span>
           <p>Pick a doll to start dressing up! ♡</p>
         </div>
+
       </div>
 
     </div>
   `;
 });
 
+
 closetButton.addEventListener("click", function() {
+  setActiveButton(closetButton);
+
   content.innerHTML = `
     <h2>My Closet</h2>
     <p>Your saved outfits will appear here! ♡</p>
   `;
 });
 
+
 memorialButton.addEventListener("click", function() {
+  setActiveButton(memorialButton);
+
   content.innerHTML = `
     <h2>Memorial</h2>
     <p>In loving memory of Kiona "Cucu" Brown ♡</p>
